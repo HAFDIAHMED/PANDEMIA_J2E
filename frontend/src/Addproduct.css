@@ -1,0 +1,49 @@
+.intro Image{
+
+}
+.about-text span{
+    color: #00c6e0;
+
+}
+
+.about-text hr{
+
+  border: 2px solid #00c6e0;
+  border-radius: 3px;
+  width: 85px;
+  margin-left: 1.4em;
+
+}
+.p-fluid{
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+.p-fluid h1{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #ec4a3b;
+}
+.p-fluid h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ff7c34;
+
+}
+.p-fluid Button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#ff7d35;
+    font-weight: bold;
+    border: 2px solid #ff7d35;
+    background-color: #ffffff;
+    width: 20%;
+    margin-top: 3em;
+
+}
+.p-fluid Button:hover{
+    color:rgb(255, 255, 255) ;
+    font-weight: bold;
+    border: 2px solid #ff7d35;
+    background-color: #ff7d35;
+}

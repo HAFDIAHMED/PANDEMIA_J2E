@@ -1,0 +1,5 @@
+#n #nav{
+    place-items: left;
+    align-items: flex-end;
+    margin-left: 5em;
+}

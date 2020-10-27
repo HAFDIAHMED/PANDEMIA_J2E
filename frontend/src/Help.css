@@ -1,0 +1,25 @@
+.helpme {
+margin-top: 7em;
+}
+.helpme h1{
+    color:#00c6e0;
+    
+}
+
+
+
+.helpme hr{
+    text-align: left;
+    border: 2px solid #00b9be;
+    border-radius: 3px;
+    width: 85px;
+    
+  }
+.helpme p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+
+}
+.p-accordion-header{
+    font-size: 1.4em;
+}

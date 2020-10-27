@@ -1,0 +1,22 @@
+language: java
+jdk: oraclejdk11
+before_install:
+  - wget https://repo.mysql.com//mysql-apt-config_0.8.10-1_all.deb
+  - sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
+  - sudo apt-get update -q
+  - sudo apt-get install -q -y --allow-unauthenticated -o Dpkg::Options::=--force-confnew mysql-server
+  - sudo systemctl restart mysql
+  - sudo mysql_upgrade
+  - mysql --version  
+  - mysql -e 'CREATE DATABASE Pandemia;'
+  - mysql Pandemia < Pandemia.sql
+install: true
+script:
+  - cd backend
+  - mvn test -B
+services:
+  - mysql
+after_success:
+  - cd backend
+  - export CODECOV_TOKEN="a69211cd-dea8-432d-94a6-e71bda032d1b"
+  - bash <(curl -s https://codecov.io/bash) -t
